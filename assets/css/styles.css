@@ -1,0 +1,40 @@
+body {
+    font-family: 'Comic Neue', sans-serif;
+}
+
+.carousel-item-img-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+}
+
+.carousel-item-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.carousel-item-img-wrapper img:hover {
+    transform: scale(1.05);
+}
+
+.custom-hr {
+    width: 50px;
+    height: 3px;
+    background-color: #17a2b8;
+    border: none;
+    margin: 0 auto;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
