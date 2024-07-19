@@ -1,5 +1,13 @@
 body {
     font-family: 'Comic Neue', sans-serif;
+    background: rgb(241,241,241);
+background: linear-gradient(180deg, rgba(241,241,241,1) 15%, rgba(119,234,240,1) 35%, rgba(46,228,237,1) 55%, rgba(118,225,189,1) 75%, rgba(244,221,105,1) 95%);
+}
+
+.custom-header {
+    background: rgb(241,241,241);
+    background: radial-gradient(circle, rgba(241,241,241,1) 15%, rgba(119,234,240,1) 35%, rgba(46,228,237,1) 55%, rgba(118,225,189,1) 75%, rgba(244,221,105,1) 95%);
+    color: rgb(133, 136, 135);
 }
 
 .carousel-item-img-wrapper {
