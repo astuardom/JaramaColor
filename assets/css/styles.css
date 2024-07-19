@@ -1,12 +1,12 @@
 body {
     font-family: 'Comic Neue', sans-serif;
     background: rgb(241,241,241);
-background: linear-gradient(180deg, rgba(241,241,241,1) 15%, rgba(119,234,240,1) 35%, rgba(46,228,237,1) 55%, rgba(118,225,189,1) 75%, rgba(244,221,105,1) 95%);
+    background: linear-gradient(180deg, rgba(241,241,241,1) 15%, rgba(119,234,240,1) 35%, rgba(46,228,237,1) 55%, rgba(118,225,189,1) 75%, rgba(244,221,105,1) 95%);
 }
 
 .custom-header {
-    background: rgb(241,241,241);
-    background: radial-gradient(circle, rgba(241,241,241,1) 15%, rgba(119,234,240,1) 35%, rgba(46,228,237,1) 55%, rgba(118,225,189,1) 75%, rgba(244,221,105,1) 95%);
+    background: rgb(46,228,237);
+    background: radial-gradient(circle, rgba(46,228,237,0.8491771708683473) 15%, rgba(234,237,117,0.87718837535014) 50%, rgba(46,228,237,0.7903536414565826) 85%);
     color: rgb(133, 136, 135);
 }
 
@@ -39,10 +39,34 @@ background: linear-gradient(180deg, rgba(241,241,241,1) 15%, rgba(119,234,240,1)
     margin: 0 auto;
 }
 
+.social-icon i {
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover i.fa-whatsapp {
+    color: #05af43; /* Color para WhatsApp */
+}
+
+.social-icon:hover i.fa-instagram {
+    color: #E4405F; /* Color para Instagram */
+}
+
+.social-icon:hover i.fa-facebook {
+    color: #3b5998; /* Color para Facebook */
+}
+
+
 .card {
     transition: transform 0.3s;
+    font-weight: bold;
 }
 
 .card:hover {
     transform: translateY(-10px);
+}
+
+.footer{
+    background: rgb(46,228,237);
+    background: radial-gradient(circle, rgba(46,228,237,0.8491771708683473) 15%, rgba(234,237,117,0.87718837535014) 50%, rgba(46,228,237,0.7903536414565826) 85%);
+    color: rgb(133, 136, 135);
 }
