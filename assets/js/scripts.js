@@ -11,3 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
         ride: 'carousel'
     });
 });
+
+var imageModal = document.getElementById('imageModal')
+        imageModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget
+            var recipient = button.getAttribute('data-bs-whatever')
+            var modalImage = imageModal.querySelector('#modalImage')
+            modalImage.src = recipient
+        })
