@@ -12,10 +12,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-var imageModal = document.getElementById('imageModal')
-        imageModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget
-            var recipient = button.getAttribute('data-bs-whatever')
-            var modalImage = imageModal.querySelector('#modalImage')
-            modalImage.src = recipient
-        })
+document.addEventListener('DOMContentLoaded', function() {
+    var poleraModal = document.getElementById('poleraModal');
+    
+    // Escucha el evento de mostrar el modal
+    poleraModal.addEventListener('show.bs.modal', function (event) {
+        // Botón que disparó el modal
+        var button = event.relatedTarget;
+
+        // Extrae la información de los atributos data
+        var title = button.getAttribute('data-title');
+        var description = button.getAttribute('data-description');
+        var image = button.getAttribute('data-image');
+        
+        // Actualiza el contenido del modal
+        var modalTitle = poleraModal.querySelector('#modalTitle');
+        var modalDescription = poleraModal.querySelector('#modalDescription');
+        var modalImage = poleraModal.querySelector('#modalImage');
+
+        // Asegúrate de que la imagen se esté seleccionando correctamente
+        if (modalImage) {
+            modalImage.src = image;
+        }
+
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+    });
+});

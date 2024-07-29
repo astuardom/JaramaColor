@@ -61,7 +61,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 1</h5>
                         <p class="card-text">Descripción corta 1</p>
-                        <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                        <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/1.jpg">Ver</button>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 2</h5>
                         <p class="card-text">Descripción corta 2</p>
-                        <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                        <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/2.jpg">Ver</button>
+                    
                     </div>
                 </div>
             </div>
@@ -81,7 +82,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 3</h5>
                         <p class="card-text">Descripción corta 3</p>
-                        <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                        <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/3.jpg">Ver</button>
+                    
                     </div>
                 </div>
             </div>
@@ -91,7 +93,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 4</h5>
                         <p class="card-text">Descripción corta 4</p>
-                        <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                        <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/4.jpg">Ver</button>
+                    
                     </div>
                 </div>
             </div>
@@ -101,7 +104,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 5</h5>
                         <p class="card-text">Descripción corta 5</p>
-                        <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                        <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/5.jpg">Ver</button>
+                    
                     </div>
                 </div>
             </div>
@@ -111,7 +115,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 6</h5>
                         <p class="card-text">Descripción corta 6</p>
-                        <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                        <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/6.jpg">Ver</button>
+                    
                     </div>
                 </div>
             </div>
@@ -121,7 +126,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 7</h5>
                         <p class="card-text">Descripción corta 7</p>
-                        <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                        <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/7.jpg">Ver</button>
+                    
                     </div>
                 </div>
             </div>
@@ -131,7 +137,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Título 8</h5>
                         <p class="card-text">Descripción corta 8</p>
-                        <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                        <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/8.jpg">Ver</button>
+                    
                     </div>
                 </div>
             </div>
@@ -141,13 +148,38 @@
                   <div class="card-body">
                       <h5 class="card-title">Título 9</h5>
                       <p class="card-text">Descripción corta 9</p>
-                      <button class="btn btn-outline-success text-white" type="submit">Ver</button>
+                      <button class="btn btn-outline-success text-white verPolera" data-bs-toggle="modal" data-bs-target="#poleraModal" data-title="Título 1" data-description="Descripción corta 1" data-image="assets/img/9.jpg">Ver</button>
+                    
                   </div>
               </div>
           </div>
+<!-- Modal -->
+<div class="modal fade" id="poleraModal" tabindex="-1" aria-labelledby="poleraModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content custom-modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="poleraModalLabel">Detalles de la Polera</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" id="modalImage" class="img-fluid" alt="Imagen de la Polera">
+                <h5 id="modalTitle">Título de la Polera</h5>
+                <p id="modalDescription">Descripción de la Polera</p>
+            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        <a href="https://wa.me/1234567890?text=Hola,%20quiero%20más%20información%20sobre%20tu%20producto" class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
         </div>
     </div>
 </section>
+
+
 
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">

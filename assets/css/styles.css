@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: "Rajdhani", sans-serif;
     background: #1b2330;
@@ -5,11 +6,13 @@ body {
     font-weight: 600;
 }
 
-.custom-header{
-background-color: black;
-color: #34eb4f;
+/* Estilos de la cabecera y pie de página */
+.custom-header, .footer {
+    background-color: black;
+    color: #34eb4f;
 }
 
+/* Estilos para las imágenes del carrusel */
 .carousel-item-img-wrapper {
     position: relative;
     width: 150px;
@@ -18,8 +21,8 @@ color: #34eb4f;
 }
 
 .carousel-item-img-wrapper img {
-    max-width: 80%;
-    max-height: 80%;
+    width: 100%;
+    height: auto;
     transition: transform 0.3s;
 }
 
@@ -27,14 +30,16 @@ color: #34eb4f;
     transform: scale(1.05);
 }
 
+/* Estilos de la línea horizontal */
 .custom-hr {
-    width: 50px;
+    border: 0;
     height: 3px;
-    background-color: #17a2b8;
-    border: none;
-    margin: 0 auto;
+    width: 80%;
+    background-color: #34eb4f;
+    margin: 20px auto;
 }
 
+/* Estilos de los íconos sociales */
 .social-icon i {
     transition: color 0.3s ease;
 }
@@ -51,6 +56,7 @@ color: #34eb4f;
     color: #3b5998;
 }
 
+/* Estilos de las tarjetas */
 .card {
     background-color: transparent;
     transition: transform 0.3s;
@@ -66,16 +72,88 @@ color: #34eb4f;
     transform: translateY(-10px);
 }
 
-.custom-hr {
-    border: 0;
-    height: 3px; 
-    width: 80%; 
-    background-color: #34eb4f; 
-    margin: 20px auto; 
+/* Colores de texto personalizados */
+.text-green {
+    color: #45F882;
 }
 
-
-.footer {
-    background: black;
+.text-dark-green {
     color: #34eb4f;
+}
+
+/* Estilos para los botones */
+.btn-outline-success.text-white {
+    border-color: #34eb4f;
+    color: #34eb4f;
+}
+
+.btn-outline-success.text-white:hover {
+    background-color: #34eb4f;
+    color: black;
+}
+
+/* Estilos del modal */
+.custom-modal-content {
+    background-color: #1b2330;
+    color: #ffffff;
+}
+
+.custom-modal-content .modal-header,
+.custom-modal-content .modal-footer {
+    border: none;
+}
+
+.custom-modal-content .modal-header .modal-title,
+.custom-modal-content .modal-body,
+.custom-modal-content .modal-footer button {
+    color: #45F882;
+}
+
+.custom-modal-content .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #45F882;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.custom-modal-content .btn-secondary:hover {
+    background-color: #34eb4f;
+    color: white;
+}
+
+.custom-modal-content .modal-body img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp i {
+    margin-right: 10px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1EBE5A;
+    text-decoration: none;
+}
+
+.btn-whatsapp i.fab.fa-whatsapp {
+    font-size: 1.5rem;
 }
