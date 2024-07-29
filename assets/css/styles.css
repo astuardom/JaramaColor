@@ -5,6 +5,11 @@ body {
     color: #45F882;
     font-weight: 600;
 }
+@media (max-width: 768px) {
+    .navbar-collapse {
+      display: block !important;
+    }
+  }
 
 /* Estilos de la cabecera y pie de página */
 .custom-header, .footer {
