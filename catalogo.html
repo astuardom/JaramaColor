@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Jarama Color - Catálogo</title>
+</head>
+<body>
+    <header class="container-fluid custom-header d-flex justify-content-center py-2">
+        <div>
+            <a href="#" class="text-white mx-2 social-icon"><i class="fab fa-whatsapp fa-2x"></i></a>
+            <a href="#" class="text-white mx-2 social-icon"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="text-white mx-2 social-icon"><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bs-light-bg-subtle" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo final.jpg" alt="" width="75" height="75" class="d-inline-block align-text-top">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: #45F882">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="catalogo.html" style="color: #45F882">Catálogo</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success text-white" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center">Poleras Anime</h2>
+            <hr class="custom-hr">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Aquí se cargarán las poleras -->
+            </div>
+
+            <!-- Paginación -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <!-- Las páginas se generarán dinámicamente -->
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="poleraModal" tabindex="-1" aria-labelledby="poleraModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="poleraModalLabel">Detalles de la Polera</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Imagen de la Polera">
+                    <h5 id="modalTitle">Título de la Polera</h5>
+                    <p id="modalDescription">Descripción de la Polera</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://wa.me/1234567890?text=Hola,%20quiero%20más%20información%20sobre%20tu%20producto" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 text-secondary custom-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="assets/img/logo final.jpg" alt="" width="120" height="120" class="d-inline-block align-text-top">
+                    <div class="ms-3">
+                        <h5 style="color: #45F882">Información de contacto</h5>
+                        <p style="color: #45F882">Teléfono: +56 9 61448079</p>
+                        <p style="color: #45F882">Email: info@jaramacolor.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <a href="#" class="text-white mx-2 social-icon"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    <a href="#" class="text-white mx-2 social-icon"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white mx-2 social-icon"><i class="fab fa-facebook fa-2x"></i></a>
+                </div>
+            </div>
+            <hr class="custom-hr">
+            <div class="text-center">
+                <p class="mb-0" style="color: #45F882">&copy; 2024 Jarama Color. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/catalogo.js"></script>
+</body>
+</html>
