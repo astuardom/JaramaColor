@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Jarama Color - Catálogo</title>
 </head>
+
 <body>
     <header class="container-fluid custom-header d-flex justify-content-center py-2">
         <div>
@@ -40,11 +42,41 @@
             </div>
         </div>
     </nav>
-    
+
     <section class="py-5">
         <div class="container">
             <h2 class="text-center">Poleras Anime</h2>
             <hr class="custom-hr">
+            
+            <!-- Botones de categorías -->
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                <a href="catalogo.html?category=todo" class="btn btn-outline-success text-white m-2">Todo</a>
+                <a href="catalogo.html?category=attackOnTitan" class="btn btn-outline-success text-white m-2">Attack on Titan</a>
+                <a href="catalogo.html?category=baki" class="btn btn-outline-success text-white m-2">Baki</a>
+                <a href="catalogo.html?category=berserk" class="btn btn-outline-success text-white m-2">Berserk</a>
+                <a href="catalogo.html?category=BlackClover" class="btn btn-outline-success text-white m-2">Black Clover</a>
+                <a href="catalogo.html?category=Bleach" class="btn btn-outline-success text-white m-2">Bleach</a>
+                <a href="catalogo.html?category=BlueLock" class="btn btn-outline-success text-white m-2">Blue Lock</a>
+                <a href="catalogo.html?category=ChainsawMan" class="btn btn-outline-success text-white m-2">Chainsaw Man</a>
+                <a href="catalogo.html?category=DragonBallZ" class="btn btn-outline-success text-white m-2">Dragon Ball Z</a>
+                <a href="catalogo.html?category=DemonSlayer" class="btn btn-outline-success text-white m-2">Demon Slayer</a>
+                <a href="catalogo.html?category=Evangelion" class="btn btn-outline-success text-white m-2">Evangelion</a>
+                <a href="catalogo.html?category=FullmetalAlchemist" class="btn btn-outline-success text-white m-2">Fullmetal Alchemist</a>
+                <a href="catalogo.html?category=HunterXHunter" class="btn btn-outline-success text-white m-2">Hunter X Hunter</a>
+                <a href="catalogo.html?category=JujutsuKaisen" class="btn btn-outline-success text-white m-2">Jujutsu Kaisen</a>
+                <a href="catalogo.html?category=KaijuNo8" class="btn btn-outline-success text-white m-2">Kaiju No. 8</a>
+                <a href="catalogo.html?category=MyHeroAcademia" class="btn btn-outline-success text-white m-2">My Hero Academia</a>
+                <a href="catalogo.html?category=Naruto" class="btn btn-outline-success text-white m-2">Naruto</a>
+                <a href="catalogo.html?category=OnePeace" class="btn btn-outline-success text-white m-2">One Peace</a>
+                <a href="catalogo.html?category=OnePuchMan" class="btn btn-outline-success text-white m-2">One Puch Man</a>
+                <a href="catalogo.html?category=SamurayX" class="btn btn-outline-success text-white m-2">Samuray X</a>
+                <a href="catalogo.html?category=SlamDunk" class="btn btn-outline-success text-white m-2">Slam Dunk</a>
+                <a href="catalogo.html?category=SpyxFamily" class="btn btn-outline-success text-white m-2">SPY x FAMILY</a>
+                <a href="catalogo.html?category=TokyoRevengers" class="btn btn-outline-success text-white m-2">Tokyo Revengers</a>
+                <a href="catalogo.html?category=TokyoGhoul" class="btn btn-outline-success text-white m-2">Tokyo Ghoul</a>
+            </div>
+            
+
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- Aquí se cargarán las poleras -->
             </div>
@@ -58,28 +90,38 @@
         </div>
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="poleraModal" tabindex="-1" aria-labelledby="poleraModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content custom-modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="poleraModalLabel">Detalles de la Polera</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="" id="modalImage" class="img-fluid" alt="Imagen de la Polera">
-                    <h5 id="modalTitle">Título de la Polera</h5>
-                    <p id="modalDescription">Descripción de la Polera</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="https://w.app/Rtd4xw" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
-                    </a>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+   <!-- Modal de vista previa -->
+<div class="modal fade" id="poleraModal" tabindex="-1" aria-labelledby="poleraModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Imagen del producto" class="img-fluid">
+                <h5 id="modalTitle"></h5>
+                <p id="modalDescription"></p>
+                <a id="whatsappLink" class="btn btn-success" target="_blank">Contactar por WhatsApp</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Modal de descripción completa -->
+<div class="modal fade" id="fullDescriptionModal" tabindex="-1" aria-labelledby="fullDescriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fullDescriptionModalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="fullDescriptionModalBody"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer class="py-4 text-secondary custom-header">
         <div class="container">
@@ -104,9 +146,11 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
     <script src="assets/js/catalogo.js"></script>
 </body>
+
 </html>

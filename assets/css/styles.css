@@ -162,4 +162,7 @@ body {
 .btn-whatsapp i.fab.fa-whatsapp {
     font-size: 1.5rem;
 }
-
+.modal-content {
+    background-color: #1b2330; /* Cambia el color de fondo del modal */
+    
+}
