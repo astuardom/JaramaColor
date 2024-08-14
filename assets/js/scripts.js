@@ -57,8 +57,8 @@ document.addEventListener('click', (e) => {
         // WhatsApp
         document.getElementById('whatsappLink').href = `https://wa.me/?text=${encodedMessage}`;
         
-        // Instagram (usando un enlace directo a tu perfil, ya que Instagram no tiene un servicio de mensajería directa a través de un enlace)
-        document.getElementById('instagramLink').href = `https://www.instagram.com/tuusuario/?message=${encodedMessage}`;
+        // Instagram
+        document.getElementById('instagramLink').href = `https://www.instagram.com/jaramacolor?message=${encodedMessage}`;
 
         // Facebook Messenger
         document.getElementById('facebookLink').href = `https://m.me/tuusuario?message=${encodedMessage}`;
