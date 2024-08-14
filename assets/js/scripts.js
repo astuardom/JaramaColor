@@ -39,3 +39,32 @@ document.addEventListener('DOMContentLoaded', function() {
         modalDescription.textContent = description;
     });
 });
+
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('polera-image')) {
+        const imgSrc = e.target.src;
+        const title = e.target.dataset.title;
+        const description = e.target.dataset.description;
+
+        // Configurar el contenido del modal
+        document.getElementById('modalImage').src = imgSrc;
+        document.getElementById('modalTitle').textContent = title;
+        document.getElementById('modalDescription').textContent = description;
+
+        // Configurar los enlaces de redes sociales
+        const encodedMessage = encodeURIComponent(title + ': ' + description);
+
+        // WhatsApp
+        document.getElementById('whatsappLink').href = `https://wa.me/?text=${encodedMessage}`;
+        
+        // Instagram (usando un enlace directo a tu perfil, ya que Instagram no tiene un servicio de mensajería directa a través de un enlace)
+        document.getElementById('instagramLink').href = `https://www.instagram.com/tuusuario/?message=${encodedMessage}`;
+
+        // Facebook Messenger
+        document.getElementById('facebookLink').href = `https://m.me/tuusuario?message=${encodedMessage}`;
+
+        // Mostrar el modal
+        const modal = new bootstrap.Modal(document.getElementById('poleraModal'));
+        modal.show();
+    }
+});

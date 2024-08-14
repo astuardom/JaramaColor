@@ -17,6 +17,12 @@ body {
     color: #34eb4f;
 }
 
+/* CSS para centrar y ajustar el tamaño de la imagen */
+.custom-carousel-image {
+    max-width: 70%; /* Ajusta el tamaño máximo de la imagen al 75% del contenedor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    object-fit: contain; /* Asegura que la imagen se mantenga dentro del contenedor sin distorsionarse */
+}
 /* Estilos para las imágenes del carrusel */
 .carousel-item-img-wrapper {
     position: relative;
