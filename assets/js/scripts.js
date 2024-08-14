@@ -54,17 +54,18 @@ document.addEventListener('click', (e) => {
         // Configurar los enlaces de redes sociales
         const encodedMessage = encodeURIComponent(title + ': ' + description);
 
-        // WhatsApp
-        document.getElementById('whatsappLink').href = `https://wa.me/?text=${encodedMessage}`;
+        // WhatsApp (para enviar un mensaje)
+        document.getElementById('whatsappLink').href = `https://wa.me/56961448079?text=${encodedMessage}`;
         
-        // Instagram
-        document.getElementById('instagramLink').href = `https://www.instagram.com/jaramacolor?message=${encodedMessage}`;
+        // Instagram (para visitar el perfil)
+        document.getElementById('instagramLink').href = `https://www.instagram.com/jaramacolor/`;
 
-        // Facebook Messenger
-        document.getElementById('facebookLink').href = `https://m.me/tuusuario?message=${encodedMessage}`;
+        // Facebook (para visitar la página de Facebook)
+        document.getElementById('facebookLink').href = `https://www.facebook.com/profile.php?id=61556638503592`;
 
         // Mostrar el modal
         const modal = new bootstrap.Modal(document.getElementById('poleraModal'));
         modal.show();
     }
 });
+

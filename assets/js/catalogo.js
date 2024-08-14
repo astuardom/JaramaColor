@@ -506,7 +506,6 @@ document.addEventListener('click', (e) => {
         document.getElementById('modalImage').src = imgSrc;
         document.getElementById('modalTitle').textContent = title;
         document.getElementById('modalDescription').textContent = description;
-        document.getElementById('whatsappLink').href = `https://wa.me/?text=${encodeURIComponent(title + ': ' + description)}`;
 
         // Mostrar el modal
         const modal = new bootstrap.Modal(document.getElementById('poleraModal'));
