@@ -1,29 +1,74 @@
-/* Estilos generales */
+/* Estilos Generales */
 body {
     font-family: "Rajdhani", sans-serif;
-    background: #1b2330;
+    background: #1b2330 !important;
     color: #45F882;
     font-weight: 600;
 }
+
+/* Estilos Responsivos */
 @media (max-width: 768px) {
     .navbar-collapse {
-      display: block !important;
+        display: block !important;
     }
-  }
 
-/* Estilos de la cabecera y pie de página */
+    #canvas-container {
+        padding-bottom: 150%;
+    }
+
+    #controls select, #controls input, #controls button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #canvas-container {
+        padding-bottom: 170%;
+    }
+}
+
+/* Estilos de Cabecera y Pie de Página */
 .custom-header, .footer {
     background-color: black;
     color: #34eb4f;
 }
 
-/* CSS para centrar y ajustar el tamaño de la imagen */
-.custom-carousel-image {
-    max-width: 70%; /* Ajusta el tamaño máximo de la imagen al 75% del contenedor */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    object-fit: contain; /* Asegura que la imagen se mantenga dentro del contenedor sin distorsionarse */
+/* Estilos del Contenedor del Canvas */
+#canvas-container {
+    position: relative;
+    width: 100%;
+    padding: 5% 0;
+    border-radius: 10px;
 }
-/* Estilos para las imágenes del carrusel */
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para los Controles */
+#controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type="file"], select {
+    max-width: 100%;
+}
+
+/* Estilos de las Imágenes del Carrusel */
+.custom-carousel-image {
+    max-width: 70%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
 .carousel-item-img-wrapper {
     position: relative;
     width: 150px;
@@ -41,7 +86,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Estilos de la línea horizontal */
+/* Estilos de la Línea Horizontal */
 .custom-hr {
     border: 0;
     height: 3px;
@@ -50,7 +95,7 @@ body {
     margin: 20px auto;
 }
 
-/* Estilos de los íconos sociales */
+/* Estilos de los Íconos Sociales */
 .social-icon i {
     transition: color 0.3s ease;
 }
@@ -67,7 +112,7 @@ body {
     color: #3b5998;
 }
 
-/* Estilos de las tarjetas */
+/* Estilos de las Tarjetas */
 .card {
     background-color: transparent;
     transition: transform 0.3s;
@@ -83,7 +128,7 @@ body {
     transform: translateY(-10px);
 }
 
-/* Colores de texto personalizados */
+/* Colores de Texto Personalizados */
 .text-green {
     color: #45F882;
 }
@@ -92,7 +137,7 @@ body {
     color: #34eb4f;
 }
 
-/* Estilos para los botones */
+/* Estilos para los Botones */
 .btn-outline-success.text-white {
     border-color: #34eb4f;
     color: #34eb4f;
@@ -103,7 +148,7 @@ body {
     color: black;
 }
 
-/* Estilos del modal */
+/* Estilos del Modal */
 .custom-modal-content {
     background-color: #1b2330;
     color: #ffffff;
@@ -143,6 +188,7 @@ body {
     margin: 0 auto;
 }
 
+/* Estilos para el Botón de WhatsApp */
 .btn-whatsapp {
     background-color: #25D366;
     color: white;
@@ -168,7 +214,18 @@ body {
 .btn-whatsapp i.fab.fa-whatsapp {
     font-size: 1.5rem;
 }
-.modal-content {
-    background-color: #1b2330; /* Cambia el color de fondo del modal */
-    
+
+/* Estilos para la sección informativa */
+.info-box {
+    border: 1px solid #ced4da; /* Borde gris claro */
+    color: #1EBE5A; /* Color de texto oscuro */
+    border-radius: 10px;
+}
+
+.info-box h4 {
+    color: #45F882; /* Color verde para el título */
+}
+
+.info-box p {
+    margin-bottom: 1rem; /* Espaciado entre párrafos */
 }
